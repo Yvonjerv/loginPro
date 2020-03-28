@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="782.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpro.LoginController">
+    <children>
+      <Pane prefHeight="480.0" prefWidth="334.0" style="-fx-background-color: #117c61;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="205.0" prefHeight="28.0" prefWidth="231.0" text="Easy Control" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="258.0" prefHeight="28.0" prefWidth="255.0" text="Second project. Java + MySQL" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="142.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_building_50px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField fx:id="txtUsername" layoutX="447.0" layoutY="81.0" prefHeight="25.0" prefWidth="246.0" />
+      <PasswordField fx:id="txtPassword" layoutX="447.0" layoutY="137.0" prefHeight="25.0" prefWidth="246.0" />
+      <Button fx:id="btn_forgot" layoutX="447.0" layoutY="206.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Forgot Password" />
+      <Button fx:id="btn_facebook" layoutX="447.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="246.0" style="-fx-background-color: #1b4682; -fx-border-color: #1b4682;" text="Sign in with Facebook" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="18.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_facebook_f_filled_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnSignup" layoutX="447.0" layoutY="407.0" mnemonicParsing="false" onAction="#handleButtonAction" onMouseClicked="#handleButtonAction" prefHeight="25.0" prefWidth="246.0" style="-fx-background-color: #ffffff; -fx-border-color: #045d46;" text="Sign up" textFill="#045d46" />
+      <Separator layoutX="447.0" layoutY="273.0" prefHeight="3.0" prefWidth="246.0" />
+      <Separator layoutX="447.0" layoutY="369.0" prefHeight="3.0" prefWidth="246.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="556.0" layoutY="265.0" prefHeight="17.0" prefWidth="36.0" style="-fx-background-color: #ffffff;" text="Or" textAlignment="CENTER" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="556.0" layoutY="362.0" prefHeight="17.0" prefWidth="36.0" style="-fx-background-color: #ffffff;" text="Or" textAlignment="CENTER" />
+      <Label fx:id="lblErrors" layoutX="447.0" layoutY="173.0" prefHeight="17.0" prefWidth="246.0" />
+      <JFXButton fx:id="btnSignin" layoutX="583.0" layoutY="205.0" onAction="#handleButtonAction" onMouseClicked="#handleButtonAction" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: #117c61; -fx-background-radius: 5em;" text="Sign in" textFill="WHITE" />
+    </children>
+</AnchorPane>
